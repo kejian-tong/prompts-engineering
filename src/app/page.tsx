@@ -9,6 +9,8 @@ import { DiscoveryPrompts } from "@/components/prompts/discovery-prompts";
 import { HeroCategories } from "@/components/prompts/hero-categories";
 import { CliCommand } from "@/components/layout/cli-command";
 import { ExtensionLink } from "@/components/layout/extension-link";
+import { AnimatedText } from "@/components/layout/animated-text";
+import { SponsorLink, BecomeSponsorLink, BuiltWithLink } from "@/components/layout/sponsor-link";
 
 function getOrdinalSuffix(n: number): string {
   const s = ["th", "st", "nd", "rd"];
@@ -70,7 +72,7 @@ export default async function HomePage() {
             />
           </div>
         ) : (
-          <div className="absolute top-0 end-0 bottom-0 w-1/2 hidden md:block pointer-events-none">
+          <div className="absolute top-0 end-0 bottom-0 w-1/3 2xl:w-1/2 hidden md:block pointer-events-none">
             {/* Video background */}
             <div className="absolute inset-0">
               <div className="absolute inset-0 bg-gradient-to-r rtl:bg-gradient-to-l from-background via-background/80 to-transparent z-10" />
@@ -127,9 +129,9 @@ export default async function HomePage() {
               </>
             ) : (
               <>
-                <h1 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl !text-2xl sm:!text-3xl md:!text-4xl lg:!text-5xl">
-                  {tHomepage("heroTitle")}
-                  <span className="block text-primary">{tHomepage("heroSubtitle")}</span>
+                <h1 className="space-y-0 overflow-visible">
+                  <AnimatedText className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-none text-balance">{tHomepage("heroTitle")}</AnimatedText>
+                  <AnimatedText className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl italic font-display tracking-tight leading-none whitespace-nowrap">{tHomepage("heroSubtitle")}</AnimatedText>
                 </h1>
                 <p className="mt-6 text-muted-foreground text-lg max-w-xl">
                   {tHomepage("heroDescription")}
@@ -215,60 +217,32 @@ export default async function HomePage() {
             {!useCloneBranding && (
               <div className="flex items-center justify-center gap-2 mb-4">
                 <p className="text-center text-xs text-muted-foreground">{tHomepage("achievements.sponsoredBy")}</p>
-                <Link
+                <BecomeSponsorLink
                   href="https://github.com/sponsors/f/sponsorships?sponsor=f&tier_id=558224&preview=false"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium text-pink-700 dark:text-pink-300 bg-pink-100 dark:bg-pink-900/30 hover:bg-pink-200 dark:hover:bg-pink-900/50 rounded-full transition-colors border border-pink-200 dark:border-pink-800"
                 >
                   <HeartHandshake className="h-3 w-3" />
                   {tHomepage("achievements.becomeSponsor")}
-                </Link>
+                </BecomeSponsorLink>
               </div>
             )}
             <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 md:gap-8">
               {config.homepage.sponsors.items.map((sponsor) => (
-                <Link
+                <SponsorLink
                   key={sponsor.name}
-                  href={sponsor.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-60 hover:opacity-100 transition-opacity"
-                >
-                  {sponsor.darkLogo ? (
-                    <>
-                      <Image
-                        src={sponsor.logo}
-                        alt={sponsor.name}
-                        width={120}
-                        height={40}
-                        className={`h-9 w-auto dark:hidden ${sponsor.className || ''}`}
-                      />
-                      <Image
-                        src={sponsor.darkLogo}
-                        alt={sponsor.name}
-                        width={120}
-                        height={40}
-                        className={`h-9 w-auto hidden dark:block ${sponsor.className || ''}`}
-                      />
-                    </>
-                  ) : (
-                    <Image
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      width={120}
-                      height={40}
-                      className={`h-9 w-auto dark:invert ${sponsor.className || ''}`}
-                    />
-                  )}
-                </Link>
+                  name={sponsor.name}
+                  url={sponsor.url}
+                  logo={sponsor.logo}
+                  darkLogo={sponsor.darkLogo}
+                  className={sponsor.className}
+                />
               ))}
             </div>
             {!useCloneBranding && (
               <div className="flex flex-col md:flex-row items-center justify-center gap-1.5 mt-4 pt-4 border-t text-xs text-muted-foreground">
                 <span><b>prompts.chat</b> is built with</span>
                 <span className="inline-flex items-center gap-1.5">
-                  <Link href="https://wind.surf/prompts-chat" target="_blank" rel="noopener noreferrer">
+                  <BuiltWithLink href="https://wind.surf/prompts-chat" toolName="Windsurf">
                     <Image
                       src="/sponsors/windsurf.svg"
                       alt="Windsurf"
@@ -276,9 +250,9 @@ export default async function HomePage() {
                       height={20}
                       className="h-3 w-auto dark:invert"
                     />
-                  </Link>
+                  </BuiltWithLink>
                   <span>and</span>
-                  <Link href="https://devin.ai/?utm_source=prompts.chat" target="_blank" rel="noopener noreferrer">
+                  <BuiltWithLink href="https://devin.ai/?utm_source=prompts.chat" toolName="Devin">
                     <Image
                       src="/sponsors/devin.svg"
                       alt="Devin"
@@ -293,7 +267,7 @@ export default async function HomePage() {
                       height={20}
                       className="h-6 w-auto hidden dark:block"
                     />
-                  </Link>
+                  </BuiltWithLink>
                   <span>by Cognition</span>
                 </span>
               </div>

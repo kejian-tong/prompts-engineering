@@ -128,8 +128,19 @@
     "noTagsFound": "لم يتم العثور على وسوم",
     "promptContributors": "المساهمون",
     "contributorsDescription": "المستخدمون الآخرون الذين ساعدوا في كتابة هذا الأمر. يتم إضافة المستخدمين الذين تمت الموافقة على طلبات التغيير الخاصة بهم تلقائياً.",
+    "worksBestWithModels": "يعمل بشكل أفضل مع",
+    "worksBestWithModelsDescription": "نماذج الذكاء الاصطناعي التي يعمل معها هذا الأمر بشكل أفضل (الحد الأقصى 3)",
+    "selectModel": "اختر نموذجاً...",
+    "worksBestWithMCP": "خوادم MCP",
+    "worksBestWithMCPDescription": "خوادم وأدوات MCP التي يعمل معها هذا الأمر",
+    "mcpCommandPlaceholder": "npx -y @mcp/server-name",
+    "mcpToolsPlaceholder": "tool1, tool2",
+    "add": "إضافة",
+    "advancedOptions": "خيارات متقدمة",
     "searchContributors": "البحث بواسطة اسم المستخدم...",
     "noUsersFound": "لم يتم العثور على مستخدمين",
+    "worksBestWith": "يعمل بشكل أفضل مع",
+    "mcpTools": "أدوات MCP",
     "promptPrivate": "خاص",
     "feature": "تمييز",
     "featured": "مميز",
@@ -904,7 +915,10 @@
     "thisWeek": "هذا الأسبوع",
     "prompts": "أوامر",
     "upvotes": "أصوات",
-    "noData": "لا توجد بيانات بعد"
+    "perPrompt": "لكل أمر",
+    "noData": "لا توجد بيانات بعد",
+    "sortByTotal": "ترتيب حسب إجمالي الأصوات",
+    "sortByRatio": "ترتيب حسب الأصوات لكل أمر"
   },
   "errors": {
     "notFound": "الصفحة غير موجودة",
@@ -1165,6 +1179,12 @@
   "promptWritingGuide": {
     "title": "كيفية كتابة أوامر رائعة",
     "subtitle": "نصائح وأمثلة وأفضل الممارسات لإنشاء أوامر ذكاء اصطناعي فعالة",
+    "interactiveBanner": {
+      "badge": "النسخة التفاعلية متاحة",
+      "title": "هل تريد تجربة أكثر تفصيلاً وتفاعلية؟",
+      "description": "تعمق أكثر مع دليلنا التفاعلي الشامل الذي يضم 25 فصلاً وتمارين عملية وأمثلة من الواقع لإتقان كتابة الأوامر.",
+      "cta": "اقرأ الكتاب التفاعلي"
+    },
     "generalTips": {
       "title": "نصائح عامة للأوامر الفعالة",
       "beSpecific": {

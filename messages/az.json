@@ -128,8 +128,19 @@
     "noTagsFound": "Etiket tapılmadı",
     "promptContributors": "Töhfə verənlər",
     "contributorsDescription": "Bu promptu yazmağa kömək edən digər istifadəçilər. Dəyişiklik sorğuları təsdiqlənən istifadəçilər avtomatik əlavə olunur.",
+    "worksBestWithModels": "Ən Yaxşı İşləyir",
+    "worksBestWithModelsDescription": "Bu promptun ən yaxşı işlədiyi AI modelləri (maks 3)",
+    "selectModel": "Model seçin...",
+    "worksBestWithMCP": "MCP Serverləri",
+    "worksBestWithMCPDescription": "Bu promptun işlədiyi MCP serverləri və alətləri",
+    "mcpCommandPlaceholder": "npx -y @mcp/server-name",
+    "mcpToolsPlaceholder": "tool1, tool2",
+    "add": "Əlavə et",
+    "advancedOptions": "Təkmılləşdirilmiş Seçimlər",
     "searchContributors": "İstifadəçi adına görə axtar...",
     "noUsersFound": "İstifadəçi tapılmadı",
+    "worksBestWith": "Ən yaxşı işləyir",
+    "mcpTools": "MCP Alətləri",
     "promptPrivate": "Şəxsi",
     "feature": "Xüsusi",
     "featured": "Seçilmiş",
@@ -878,7 +889,10 @@
     "thisWeek": "Bu Həftə",
     "prompts": "prompt",
     "upvotes": "bəyənmə",
-    "noData": "Hələ məlumat yoxdur"
+    "perPrompt": "prompt başına",
+    "noData": "Hələ məlumat yoxdur",
+    "sortByTotal": "Ümumi səslərə görə sırala",
+    "sortByRatio": "Prompt başına səslərə görə sırala"
   },
   "errors": {
     "notFound": "Səhifə tapılmadı",
@@ -1165,6 +1179,12 @@
   "promptWritingGuide": {
     "title": "Əla Promptlar Necə Yazılır",
     "subtitle": "Effektiv AI promptları yaratmaq üçün məsləhətlər, nümunələr və ən yaxşı təcrübələr",
+    "interactiveBanner": {
+      "badge": "İnteraktiv Versiya Mövcuddur",
+      "title": "Daha Ətraflı və İnteraktiv Təcrübə İstəyirsiniz?",
+      "description": "25 fəsil, praktiki təmrinlər və real dünya nümunələri ilə hərtarafəli interaktiv rəhbərimizlə AI prompt yazmağı mənimsaəyin.",
+      "cta": "İnteraktiv Kitabı Oxuyun"
+    },
     "generalTips": {
       "title": "Effektiv Promptlar üçün Ümumi Məsləhətlər",
       "beSpecific": {

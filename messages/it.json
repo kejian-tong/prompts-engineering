@@ -127,9 +127,20 @@
     "searchTags": "Cerca tag...",
     "noTagsFound": "Nessun tag trovato",
     "promptContributors": "Contributori",
-    "contributorsDescription": "Altri utenti che hanno contribuito a scrivere questo prompt. Gli utenti le cui richieste di modifica sono approvate vengono aggiunti automaticamente.",
+    "contributorsDescription": "Altri utenti che hanno contribuito a scrivere questo prompt. Gli utenti le cui richieste di modifica vengono approvate vengono aggiunti automaticamente.",
+    "worksBestWithModels": "Funziona Meglio Con",
+    "worksBestWithModelsDescription": "Modelli AI con cui questo prompt funziona meglio (max 3)",
+    "selectModel": "Seleziona modello...",
+    "worksBestWithMCP": "Server MCP",
+    "worksBestWithMCPDescription": "Server e strumenti MCP con cui funziona questo prompt",
+    "mcpCommandPlaceholder": "npx -y @mcp/server-name",
+    "mcpToolsPlaceholder": "tool1, tool2",
+    "add": "Aggiungi",
+    "advancedOptions": "Opzioni Avanzate",
     "searchContributors": "Cerca per nome utente...",
     "noUsersFound": "Nessun utente trovato",
+    "worksBestWith": "Funziona meglio con",
+    "mcpTools": "Strumenti MCP",
     "promptPrivate": "Privato",
     "feature": "In evidenza",
     "featured": "In evidenza",
@@ -904,7 +915,10 @@
     "thisWeek": "Questa Settimana",
     "prompts": "prompt",
     "upvotes": "voti",
-    "noData": "Nessun dato disponibile ancora"
+    "perPrompt": "per prompt",
+    "noData": "Nessun dato disponibile ancora",
+    "sortByTotal": "Ordina per voti totali",
+    "sortByRatio": "Ordina per voti per prompt"
   },
   "errors": {
     "notFound": "Pagina non trovata",
@@ -1165,6 +1179,12 @@
   "promptWritingGuide": {
     "title": "Come Scrivere Buoni Prompt",
     "subtitle": "Suggerimenti, esempi e best practice per creare prompt IA efficaci",
+    "interactiveBanner": {
+      "badge": "Versione Interattiva Disponibile",
+      "title": "Vuoi un'Esperienza Più Dettagliata e Interattiva?",
+      "description": "Approfondisci con la nostra guida interattiva completa con 25 capitoli, esercizi pratici ed esempi reali per padroneggiare i prompt IA.",
+      "cta": "Leggi il Libro Interattivo"
+    },
     "generalTips": {
       "title": "Suggerimenti Generali per Prompt Efficaci",
       "beSpecific": {

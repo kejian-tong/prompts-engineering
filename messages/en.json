@@ -128,6 +128,17 @@
     "noTagsFound": "No tags found",
     "promptContributors": "Contributors",
     "contributorsDescription": "Other users who helped write this prompt. Users whose change requests are approved are added automatically.",
+    "worksBestWithModels": "Works Best With",
+    "worksBestWithModelsDescription": "AI models this prompt works best with (max 3)",
+    "selectModel": "Select model...",
+    "worksBestWithMCP": "MCP Servers",
+    "worksBestWithMCPDescription": "MCP servers and tools this prompt works with",
+    "mcpCommandPlaceholder": "npx -y @mcp/server-name",
+    "mcpToolsPlaceholder": "tool1, tool2",
+    "add": "Add",
+    "advancedOptions": "Advanced Options",
+    "worksBestWith": "Works best with",
+    "mcpTools": "MCP Tools",
     "searchContributors": "Search by username...",
     "noUsersFound": "No users found",
     "promptPrivate": "Private",
@@ -878,7 +889,10 @@
     "thisWeek": "This Week",
     "prompts": "prompts",
     "upvotes": "upvotes",
-    "noData": "No data available yet"
+    "perPrompt": "per prompt",
+    "noData": "No data available yet",
+    "sortByTotal": "Sort by total votes",
+    "sortByRatio": "Sort by votes per prompt"
   },
   "errors": {
     "notFound": "Page not found",
@@ -1165,6 +1179,12 @@
   "promptWritingGuide": {
     "title": "How to Write Great Prompts",
     "subtitle": "Tips, examples, and best practices for creating effective AI prompts",
+    "interactiveBanner": {
+      "badge": "Interactive Version Available",
+      "title": "Want a More Detailed & Interactive Experience?",
+      "description": "Dive deeper with our comprehensive interactive guide featuring 25 chapters, hands-on exercises, and real-world examples to master AI prompting.",
+      "cta": "Read the Interactive Book"
+    },
     "generalTips": {
       "title": "General Tips for Effective Prompts",
       "beSpecific": {
